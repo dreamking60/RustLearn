@@ -28,3 +28,4 @@ cargo build --release
 
 ## Chapter2
 ./guessing_game
+Use Cargo.toml file to manage rust project
