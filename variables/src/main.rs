@@ -19,4 +19,20 @@ fn main() {
     }
 
     println!("The value of y is: {y}");
+
+    //compund Type
+    // Tuple
+    let tup: (i32,f64,u8) = (500, 6.4, 1);
+    println!("The value of tup is: {}, {}, {}", tup.0, tup.1, tup.2);
+    let (t1, t2, t3) = tup;
+    println!("The value of t1, t2, t3 are: {t1}, {t2}, {t3}");
+
+    let u1 = tup.0;
+    let u2 = tup.1;
+    let u3 = tup.2;
+    println!("The value of u1, u2, u3 are: {u1}, {u2}, {u3}");
+
+    //Array
+    let a = [1,2,3,4,5];
+
 }
