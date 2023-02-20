@@ -10,15 +10,25 @@ fn main() {
     const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
     println!("The const is: {THREE_HOURS_IN_SECONDS}");
 
+    //immutable
     let y = 5;
     let y = y+1;
-
+    println!("The value of y is: {y}");
     {
         let y = y*2;
         println!("The value of y in the inner scope is: {y}");
     }
 
     println!("The value of y is: {y}");
+
+    //mutable
+    let mut z = 6;
+    println!("The value of z is: {z}");
+    {
+        z = z*2;
+        println!("The value of z in the inner scope is: {z}");
+    }
+    println!("The valjue of z is: {z}");
 
     //compund Type
     // Tuple
@@ -33,6 +43,6 @@ fn main() {
     println!("The value of u1, u2, u3 are: {u1}, {u2}, {u3}");
 
     //Array
-    let a = [1,2,3,4,5];
+    let _a = [1,2,3,4,5];
 
 }

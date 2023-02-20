@@ -26,6 +26,9 @@ cargo check
 cargo build --release
 ```
 
+### Expression
+All code in Rust can be specified as a expression. And add ';' can make it be sentence.
+
 ## Chapter2
 ./guessing_game
 Use Cargo.toml file to manage rust project
@@ -57,6 +60,14 @@ Declare a new variable with the same name sa a previous variable, then the first
 ```
 
 Shadowing is different from marking a variable as mut, because we’ll get a compile-time error if we accidentally try to reassign to this variable without using the let keyword. By using let, we can perform a few transformations on a value but have the variable be immutable after those transformations have been completed.
+
+If defined a variable with using, it will warn. Or you need to add '_' before the variable name to ignore the warning. And using '_' as variable name will ignore the apply process.
+
+The new variable with the same name as the old variable will shadow the old one. But the old one is still alive in Stack and Heap.
+
+let is sentence but not expression.
+
+In Rust, the apply value to variable is actually the pattern match.
 
 ### Data Types
 Basic Type: Integer, float, boolean and char.  
