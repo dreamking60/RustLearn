@@ -39,13 +39,29 @@ fn main() {
     //assert_eq!(33.32_f32 as f64, 33.32_f64);
 
     // method...
-    println!("{}", 3_u8.pow(2));
-    println!("{}", (-3_i32).abs());
+    println!("3^2 = {}", 3_u8.pow(2));
+    println!("|-3| = {}", (-3_i32).abs());
     println!("45 has 1: {} and 0: {}", 45i32.count_ones(), 45i32.count_zeros());
 
     // ASCII
     let a = b'A';
     let b = a+1;
     println!("a = {}, b = {}", a, b);
+    
+    // bool
+    let is_correct = true;
+    if is_correct {
+        println!("The Result is True!");
+    } else {
+        println!("The Result is False!");
+    }
+
+    // print true and false
+    println!("True: {}", true as u32);
+    println!("False: {}", false as u8);
+    //println!("{}", 1u8 as bool);
+
+    // char
+
 
 }
