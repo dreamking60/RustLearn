@@ -119,3 +119,7 @@ life based on usage
 Note that a reference’s scope starts from where it is introduced and continues through the last time that reference is used. For instance, this code will compile because the last usage of the immutable references, the println!, occurs before the mutable reference is introduced:
 
 dangle reference
+
+## Chapter5 Struct
+
+Struct data must have lifetime. So instead of &str, we use String.
