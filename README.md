@@ -94,3 +94,17 @@ First, let’s take a look at the ownership rules. Keep these rules in mind as w
 - Each value in Rust has an owner.
 - There can only be one owner at a time.
 - When the owner goes out of scope, the value will be dropped.
+
+str and String are two different String type in Rust.
+1. str is not dynamic
+2. String is synamic
+3. String = &str.to_string(), &str = &String
+4. String has push_str and push method to add String, but doesn't; str can use [] to get one char, but String can't 
+
+move and clone:
+- move invalid the old value
+- clone won't invalid the old one
+
+For primitive data, no need a move, all copy
+
+A data with drop won't have a copy
