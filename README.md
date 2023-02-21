@@ -76,5 +76,16 @@ Compund Type: tuple and array.
 ```Rust
     let tup: (i32, f64, u8) = (500, 6.4, 1)
 ```
+### Conditon
+#### match
+arm is a branch of match expression.
+```Rust
+let x = 5;
+match x {
+    0 => println!("x is zero"),
+    1..=5 => println!("x is between one and five"),
+    _ => println!("x is something else"),
+}
+```
 
-### Chapter4
+## Chapter4
