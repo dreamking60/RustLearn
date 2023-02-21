@@ -31,4 +31,29 @@ fn main() {
         count += 1;
     }
     println!("End count = {count}");
+
+    // conditonal loops with while
+    let mut number = 3;
+
+    while number != 0 {
+        println!("number = {number}");
+        number -= 1;
+    }
+    println!("LIFTOFF!!!");
+
+    // conditonal loops with for
+    let a = [10, 20, 30, 40, 50];
+
+    // for is safe and easy to use 
+    // no need to consider the index out of range
+    for element in a {
+        println!("the value is: {element}");
+    }
+
+    // Range in for
+    for time in (1..4).rev() {
+        println!("Time = {time}");
+    }
+    println!("LIFTOFF!!!");
+
 }
