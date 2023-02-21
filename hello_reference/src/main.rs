@@ -35,8 +35,19 @@ fn main() {
     let reference_to_nothing = no_dangle();
     println!("{}", reference_to_nothing);
 
-    // slice
+    // without slice using usize
+    let mut sen = String::from("Hello World");
+    let word = first_word(&sen);
+    println!("At {}", word);
+    sen.clear();
 
+    // slice
+    let mut sen = String::from("Hello World");
+    let word = first_word_slice(&sen);
+    //println!("First Word: {}", word);
+    // slice will check if sen has been refer and call error
+    //sen.clear();
+    println!("First Word: {}", word);
     
 }
 
@@ -63,4 +74,28 @@ fn change(some_string: &mut String) {
 fn no_dangle() -> String {
     let s = String::from("hello");
     s
+}
+
+fn first_word(s: &String) -> usize{
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return i;
+        }
+    }
+
+    s.len()
+}
+
+fn first_word_slice(s: &String) -> &str {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return &s[0..i];
+        }
+    }
+
+    &s[..]
 }
