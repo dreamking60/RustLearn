@@ -155,3 +155,11 @@ Enum allow different types of variables in one datat type enum.
 Enum can have impl similar as struct
 
 ### Option
+```Rust
+enum Option<T> {
+    None,
+    Some(T),
+}
+```
+Rust has no `null`. But it has a enum called Option<T> which can define if the value is null. And ignore many error while using null in other Programming language.
+
