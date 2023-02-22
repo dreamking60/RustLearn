@@ -148,3 +148,10 @@ Mthod
 
 Associated function
 
+## Chapter6 Enum and Option
+### Enum
+Enum allow different types of variables in one datat type enum.
+
+Enum can have impl similar as struct
+
+### Option
