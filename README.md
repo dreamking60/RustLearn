@@ -123,3 +123,28 @@ dangle reference
 ## Chapter5 Struct
 
 Struct data must have lifetime. So instead of &str, we use String.
+
+```Rust
+struct name {
+    name: dataType,
+    name: dataType,
+}
+
+impl name {
+    fn method(&self) {
+        self.name
+    }
+
+    fn method(&mut self) {
+        self.name = ...
+    }
+
+}
+```
+
+In method, there is a channel called automatic referencing and dereferencing.
+
+Mthod
+
+Associated function
+
