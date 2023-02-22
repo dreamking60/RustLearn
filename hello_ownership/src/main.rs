@@ -17,7 +17,7 @@ fn main() {
     print_string(s);
     // s has been removed in print_string
     //println!("After fn: {}", s);
-
+    
     // sc common String
     let sc= "hello";
     print_str(sc);
