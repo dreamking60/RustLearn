@@ -163,3 +163,33 @@ enum Option<T> {
 ```
 Rust has no `null`. But it has a enum called Option<T> which can define if the value is null. And ignore many error while using null in other Programming language.
 
+## Chapter 7 
+### Package and crate
+A crate is the smallest amount of code that the Rust compiler considers at a time. Even if you run `rustc` rather than `cargo` and pass a single source code file, the compiler considers that file to be a crate.
+
+A crate can come in one of two forms: a binary crate or a library crate. Binary crates are programs you cna compile to an executable that you can run, such as a command-line porgram or a server. Each must have a function called main that defines what happens when the executable runs. All the crates we've created so far have been binary crates.
+
+### mod scope and privacy
+submod is private. But other message in the same mod is public for the submod.
+
+The fn in mod is private.
+
+A public struct has private field if the field has no public keyword.
+
+### use
+use add mod into scope
+
+pub use add mod into all scope
+
+use ... as Name
+
+use std::cmp::Ordering;
+use std::io;
+=
+use std::{cmp::Ordering, io};
+
+Add all things under name:
+use std::[name]::*;
+
+## Chapter 8 Collectons
+### Vector
