@@ -36,14 +36,14 @@ Uranus 天王星
 unit 单位的，单元
 skip 跳跃
 law 法律
-sense 理解
+sense 含义，意义
 predict 预测
 gravitation 引力
-faint
+faint 微弱的
 Greek 希腊的
-determine 确定
+determine 决定
 conflicting 矛盾的
 comfort 适应；舒适
-specialize in
-in depth 深度
+specialize in 专攻于
+in depth 深入地
 Theory of Relativity 相对论
