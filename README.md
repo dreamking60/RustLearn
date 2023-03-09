@@ -193,3 +193,7 @@ use std::[name]::*;
 
 ## Chapter 8 Collectons
 ### Vector
+
+
+## Chapter 9 Error Handling
+### Unrecoverable Errors with panic
